@@ -1,0 +1,38 @@
+{
+    "name": "felipealves0891/php-annotations",
+    "description": "php comment annotation reading library",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Felipe Alves",
+            "email": "felipealves0891@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require" : {
+        "adhocore/cli": "^0.9.0"
+    },
+    "require-dev" : {
+        "jangregor/phpstan-prophecy": "^0.8.1",
+        "phpstan/extension-installer": "^1.1.0",
+        "phpstan/phpstan": "^0.12.70",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Annotations\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    }
+}
